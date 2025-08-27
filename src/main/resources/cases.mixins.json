@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "lolens.cases.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityDataMixin",
+    "HideCursorMixin"
+  ],
+  "server": [
+    "PlayerJoinMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

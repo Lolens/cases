@@ -1,0 +1,9 @@
+{
+  "itemgroup.cases": "Cases",
+  "text.config.cases-config.enum.loggerLevel.error": "Error",
+  "text.config.cases-config.enum.loggerLevel.info": "Error/Warn/Info",
+  "text.config.cases-config.enum.loggerLevel.warn": "Error/Warn",
+  "text.config.cases-config.option.LOGGER_LEVEL": "Уровень логов",
+  "text.config.cases-config.option.LOGGER_LEVEL.tooltip": "Определяет уровень логов\nИзменения применяются сразу. Перезапускать игру не нужно.\nПока что мало на что влияет.",
+  "text.config.cases-config.title": "Конфигурация Cases"
+}

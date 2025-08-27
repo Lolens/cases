@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cases",
+	"version": "${version}",
+	"name": "Cases",
+	"description": "Loot crate mod",
+	"authors": [
+		"Lolens"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cases/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lolens.cases.Cases"
+		],
+		"client": [
+			"lolens.cases.CasesClient"
+		],
+		"rei_client": [
+          "lolens.cases.compat.rei.REIIntegration"
+		]
+	},
+	"mixins": [
+		"cases.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
