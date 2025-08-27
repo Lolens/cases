@@ -21,7 +21,9 @@ Note that fabric loader will probably will not give you any warnings if you forg
 Quick guide: 
 
 To add crate create a folder named "lootcrates" like on the screenshot
+
 <img width="260" height="197" alt="image" src="https://github.com/user-attachments/assets/b355db35-3e1f-4f81-af1a-8d6aad550d68" />
+
 Add a .json file. Name does not matter.
 
 Here you can enter fields that later will be parsed to create a lootcrate in game
