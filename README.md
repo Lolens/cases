@@ -140,3 +140,5 @@ RARE(Color.ofFormatting(Formatting.BLUE), 300),
 EPIC(Color.ofFormatting(Formatting.LIGHT_PURPLE), 400),
 LEGENDARY(Color.ofFormatting(Formatting.GOLD), 500),
 MYTHIC(Color.ofFormatting(Formatting.RED), 600);
+
+
