@@ -133,6 +133,7 @@ slotChangeSound - self explanatory. Basically /playsound command argument
 
 drop element:
 rarity - not vanilla. Uses this enumerable. Values used for sorting. 
+```
 BLANK(Color.ofArgb(00000000), 0),
 COMMON(Color.ofFormatting(Formatting.GRAY), 100),
 UNCOMMON(Color.ofFormatting(Formatting.GREEN), 200),
@@ -140,5 +141,31 @@ RARE(Color.ofFormatting(Formatting.BLUE), 300),
 EPIC(Color.ofFormatting(Formatting.LIGHT_PURPLE), 400),
 LEGENDARY(Color.ofFormatting(Formatting.GOLD), 500),
 MYTHIC(Color.ofFormatting(Formatting.RED), 600);
+```
 
+///
+
+Commands:
+
+/cases claim - claims last reward (should be possible only if player havent got it because of disconnecting or other issue. So not very useful)
+/cases claim all - claims all rewards
+
+/cases player addRewardFromHand - adds reward from hand to the unclaimed rewards.
+/cases player get "name" rewards - displays unclaimed rewards of a player
+
+/cases server get crate all - prints all crates info in console
+/cases server get crate byId "id" - prints crate with "id" info to player
+
+/cases server get crate byId "id" (dropById/drops/itemproperties/screenproperties) - drop info / all drops info / item properties / screen properties
+
+/cases server get crate byId "id" issue "name" gives crate to a specified player (added crates are added in creative menu tab so better use it than that command)
+
+/cases server reload -
+1. server clears all known crates
+2. server parses all files in lootcrates folder
+3. server add everything it found to the crate list
+4. server sends every lootcrate data to every player on the server
+5. player receive crate info and applies changes 
+
+LOOT CRATE RELOAD DOES NOT NEED RESTARTING. EVERY CHANGE CAN BE VIEWED BY JUST EXECUTING COMMAND ABOVE
 
