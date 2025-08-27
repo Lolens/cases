@@ -12,9 +12,9 @@ What is missing/was planned: (from most to least possible to be done some day)
 ///
 
 Requirements: 
-Minecraft 1.20.1 with Fabric installed
-OwoLib
-Note that fabric loader will probably will not give you any warnings if you forgot something because I have not set up dependencies
+Minecraft 1.20.1 with Fabric installed  
+OwoLib  
+Note that fabric loader will probably will not give you any warnings if you forgot something because I have not set up dependencies  
 
 ///
 
@@ -147,13 +147,13 @@ MYTHIC(Color.ofFormatting(Formatting.RED), 600);
 
 Commands:
 
-/cases claim - claims last reward (should be possible only if player havent got it because of disconnecting or other issue. So not very useful)
+/cases claim - claims last reward (should be possible only if player havent got it because of disconnecting or other issue. So not very useful)  
 /cases claim all - claims all rewards
 
-/cases player addRewardFromHand - adds reward from hand to the unclaimed rewards.
+/cases player addRewardFromHand - adds reward from hand to the unclaimed rewards.  
 /cases player get "name" rewards - displays unclaimed rewards of a player
 
-/cases server get crate all - prints all crates info in console
+/cases server get crate all - prints all crates info in console  
 /cases server get crate byId "id" - prints crate with "id" info to player
 
 /cases server get crate byId "id" (dropById/drops/itemproperties/screenproperties) - drop info / all drops info / item properties / screen properties
