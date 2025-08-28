@@ -110,16 +110,16 @@ Heres json file that _probably_ contains all currently implemented fields. More 
 }
 ```
 ^
-also technically "color" is parseable in itemProps but it does nothing
+also technically "color" is parseable in itemProps but it does nothing  
 
-id - What "caseId" NBT will crate item have. Should be unique
-name - displayed name
-glowing - makes item glow like enchanted
-rarity - changes item name color. (Vanilla) (Possible values: "COMMON", "UNCOMMON", "RARE", "EPIC")
+id - What "caseId" NBT will crate item have. Should be unique  
+name - displayed name  
+glowing - makes item glow like enchanted  
+rarity - changes item name color. (Vanilla) (Possible values: "COMMON", "UNCOMMON", "RARE", "EPIC")  
 
-sorting - sorts displayed items (Possible values: "ASC", "ASCENDING, "DESC", "DESCENDING", "NONE")
+sorting - sorts displayed items (Possible values: "ASC", "ASCENDING, "DESC", "DESCENDING", "NONE")  
 
-outlineColor - could be in hex as in the example or in rgba like (every letter is capital, but "hex" is small - yes.)
+outlineColor - could be in hex as in the example or in rgba like (every letter is capital, but "hex" is small - yes.)  
 ```
 "outlineColor": {
     "A":10,
@@ -128,8 +128,8 @@ outlineColor - could be in hex as in the example or in rgba like (every letter i
     "B":40
 } 
 ```
-excludedEasings - already excludes all possible easings in the example. If every easing function is excluded it uses IN_OUT_SINE
-slotChangeSound - self explanatory. Basically /playsound command argument
+excludedEasings - already excludes all possible easings in the example. If every easing function is excluded it uses IN_OUT_SINE  
+slotChangeSound - self explanatory. Basically /playsound command argument  
 
 drop element:
 rarity - not vanilla. Uses this enumerable. Values used for sorting. 
@@ -148,24 +148,24 @@ MYTHIC(Color.ofFormatting(Formatting.RED), 600);
 Commands:
 
 /cases claim - claims last reward (should be possible only if player havent got it because of disconnecting or other issue. So not very useful)  
-/cases claim all - claims all rewards
+/cases claim all - claims all rewards  
 
 /cases player addRewardFromHand - adds reward from hand to the unclaimed rewards.  
-/cases player get "name" rewards - displays unclaimed rewards of a player
+/cases player get "name" rewards - displays unclaimed rewards of a player  
 
 /cases server get crate all - prints all crates info in console  
-/cases server get crate byId "id" - prints crate with "id" info to player
+/cases server get crate byId "id" - prints crate with "id" info to player  
 
-/cases server get crate byId "id" (dropById/drops/itemproperties/screenproperties) - drop info / all drops info / item properties / screen properties
+/cases server get crate byId "id" (dropById/drops/itemproperties/screenproperties) - drop info / all drops info / item properties / screen properties  
 
-/cases server get crate byId "id" issue "name" gives crate to a specified player (added crates are added in creative menu tab so better use it than that command)
+/cases server get crate byId "id" issue "name" gives crate to a specified player (added crates are added in creative menu tab so better use it than that command)  
 
 /cases server reload -
-1. server clears all known crates
-2. server parses all files in lootcrates folder
-3. server add everything it found to the crate list
-4. server sends every lootcrate data to every player on the server
-5. player receive crate info and applies changes 
+1. server clears all known crates  
+2. server parses all files in lootcrates folder  
+3. server add everything it found to the crate list  
+4. server sends every lootcrate data to every player on the server  
+5. player receive crate info and applies changes  
 
 LOOT CRATE RELOAD DOES NOT NEED RESTARTING. EVERY CHANGE CAN BE VIEWED BY JUST EXECUTING COMMAND ABOVE
 
